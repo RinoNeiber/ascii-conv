@@ -1,7 +1,7 @@
 # ascii-conv
 Simple converter png-images -> text for windows.
 ____
-# Parameters (you can use UNIX-style "-h" or Windows-style "/?"):
+### Parameters (you can use UNIX-style "-h" or Windows-style "/?"):
 
 1. **image_name**. If you want to convert an image with other name than input.png, you should put it's name as a first parameter (strictly), without extension. You can use a paths into nested directories, which names must be without spaces.
 
