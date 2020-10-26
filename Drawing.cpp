@@ -26,8 +26,8 @@ void cli::draw_borders()
 
 	CONSOLE_CURSOR_INFO cursor;
 	GetConsoleCursorInfo(hOut, &cursor);
-    cursor.bVisible = false;
-    SetConsoleCursorInfo(hOut, &cursor);
+	cursor.bVisible = false;
+	SetConsoleCursorInfo(hOut, &cursor);
 	
 	char symbol = -77;  // Vertical line for columns in tables.
 	for(SHORT i=0; i<21; i++)
