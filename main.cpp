@@ -48,8 +48,8 @@ int main(int argc, char* argv[])
 	string path(argv[0]);
 	replace_if(path.begin(), path.end(), [] (const char& s) {return s == '/';}, '\\');
 	if (path.find(':') == string::npos) path.insert(0, ".\\");
-	//size_t idx = path.rfind('\\');
-	//path.replace(idx, path.length()-idx, "\\");  // Groundwork for the future.
+	size_t idx = path.rfind('\\');
+	path.replace(idx, path.length()-idx, "\\..\\..\\arts\\");
 
 	Image source_img, ascii_img;
 	source_img.load(path + name + ".png");
