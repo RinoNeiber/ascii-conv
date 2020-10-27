@@ -2,7 +2,7 @@
 CC = g++
 CFLAGS = -Wall -MD -c -std=c++17
 LDFLAGS = -static-libstdc++ -static-libgcc -static
-EXECUTABLE = ..\..\bin\$(build_dir)\test
+EXECUTABLE = ..\..\bin\$(build_dir)\conv
 VPATH = ../../
 
 ##################################################
