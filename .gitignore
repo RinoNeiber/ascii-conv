@@ -1,4 +1,8 @@
 /arts/*
-/bin/*
-/obj/*
+!/arts/font.png
+/bin/Release/*
+/bin/Debug/*
+/obj/Release/*
+/obj/Debug/*
+!.gitkeep
 /.vscode/*
