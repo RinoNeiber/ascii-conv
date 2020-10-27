@@ -7,10 +7,11 @@ For now project supports only gcc with common structure of bin/ obj/ directories
 You can run these commands in your MinGW from project's root directory (build_flags are changeable):
 ```bash
 # Debug example.
-mingw32-make --directory=./obj/Debug --makefile=../../makefile build_flags=\"-O0 -g3 -D_DEBUG\" build_dir=Debug
+mingw32-make --directory=./obj/Debug --makefile=../../makefile build_flags="-O0 -g3 -D_DEBUG" build_dir=Debug
 # Release example.
-mingw32-make --directory=./obj/Release --makefile=../../makefile build_flags=\"-O2 -march=native -fomit-frame-pointer\" build_dir=Release
+mingw32-make --directory=./obj/Release --makefile=../../makefile build_flags="-O2 -march=native -fomit-frame-pointer" build_dir=Release
 ```
+*note: libpng and zlib are needed!*
 
 conv.exe searches for images in ../../arts/ relative to it's own directory (some sort of $PATH with customizeable list of art directories will be added in the future). Just copy your **image.png** into arts/ and run
 ```bash
