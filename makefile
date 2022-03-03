@@ -2,15 +2,14 @@
 CC = g++
 CFLAGS = -Wall -MD -c -std=c++17
 LDFLAGS = -static-libstdc++ -static-libgcc -static
-EXECUTABLE = ..\..\bin\$(build_dir)\conv
+EXECUTABLE = ../../bin/$(build_dir)/conv
 VPATH = ../../
 
 ##################################################
-DIR = D:\Programs\[coding]\Projects\ASCII-graphics
 SUBDIRS = .
 
 LIBS = -lpng -lz
-INCPATH = $(addsuffix ",$(addprefix -I"$(DIR)\,$(SUBDIRS)))
+INCPATH = $(addsuffix ",$(addprefix -I"../../,$(SUBDIRS)))
 
 OBJECTS := $(patsubst ../../%, %, $(wildcard $(addsuffix /*.cpp, $(addprefix ../../,$(SUBDIRS)))))
 OBJECTS := $(OBJECTS:.cpp=.o)
